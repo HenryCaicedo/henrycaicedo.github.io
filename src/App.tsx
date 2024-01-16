@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+import Body from './components/Body';
 
 function App() {
   return (
@@ -9,8 +10,7 @@ function App() {
       </nav>
 
       <main>
-        {/* Your main content goes here */}
-        <p>This is the body content.</p>
+        <Body/>
       </main>
 
       <footer>

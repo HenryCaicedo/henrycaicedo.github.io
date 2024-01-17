@@ -6,8 +6,8 @@ interface ItemProps {
 
 function Item({ word }: ItemProps) {
   return  <li>
-            <button className='py-2 px-1 border-b-4 border-transparent
-            hover:border-red-600 transition duration-200
+            <button className='py-2 px-3 border-b-2 border-transparent rounded-2xl hover:bg-opacity-60
+            hover:border-red-500 transition duration-200 hover:bg-red-500
             text-lg font-semibold text-white'>  
             {word || 'missing'}
             </button>
@@ -21,7 +21,7 @@ export default function NavBar() {
       <div className='bg-purple-600 w-14 h-14 space-between rounded-lg'>
         
       </div>
-        <ul className='flex space-x-10 items-center'>
+        <ul className='flex space-x-2 items-center'>
           <Item word="Home" />
           <Item word="About" />
           <Item word="Skills" />

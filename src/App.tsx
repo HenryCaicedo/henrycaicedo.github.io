@@ -5,7 +5,7 @@ import Body from './components/Body';
 function App() {
   return (
     <>
-      <nav>
+      <nav className="fixed top-0 w-full bg-white shadow-md z-50">
         <NavBar />
       </nav>
 

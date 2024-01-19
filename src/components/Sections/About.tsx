@@ -2,19 +2,22 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='flex'>
 
-        <div className='bg-pink-200 w-1/2 h-full'>
-                PINK
+    <div className='items-center justify-center space-x-28 w-full flex flex-grow px-24 py-10'>
 
-        </div>
-        <div className='bg-green-200 w-1/2 h-full'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
+      <div className='bg-slate-600 w-[22rem] h-[27rem] rounded-3xl text-center'>
+        PHOTO
+      </div>
+
+      <div className='w-1/2'>
+        <p className='text-2xl text-left'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim accusamus ullam nam assumenda, deleniti magnam inventore ut,
+          praesentium sit animi recusandae facere quidem.
+          Libero suscipit distinctio tempore doloremque? Deserunt, totam em aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+      </div>
 
     </div>
-  )
+  );
 }

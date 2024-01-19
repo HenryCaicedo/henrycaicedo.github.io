@@ -9,7 +9,8 @@ function Item({ word }: ItemProps) {
     <button className='py-2 px-3 border-b-[3px] border-transparent rounded-2xl hover:bg-opacity-60
             hover:border-blue-500 transition-all duration-150 hover:bg-blue-500
               active:border-b-0 active:mt-[3px]
-            text-lg font-semibold text-white'>
+            text-lg font-semibold text-white
+            select-none'>
       {word || 'missing'}
     </button>
   </li>;
@@ -21,7 +22,8 @@ function ContactButton() {
             border-red-500 transition-all duration-150 bg-red-500
             hover:bg-opacity-70
             active:border-b-0 active:mt-[3px]
-            text-lg font-semibold text-white'>
+            text-lg font-semibold text-white
+            select-none'>
        Contact
     </button>
   </li>;

@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
 
-    <div className='items-center justify-center space-x-28 w-full flex flex-grow px-24 py-10'>
+    <div className='items-center justify-center space-x-28 w-full flex flex-grow px-24'>
 
       <div className='bg-slate-600 w-[22rem] h-[27rem] rounded-3xl text-center'>
         PHOTO

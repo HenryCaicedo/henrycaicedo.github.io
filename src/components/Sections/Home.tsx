@@ -46,9 +46,8 @@ export default function Home() {
       </div>
 
       <div className='w-full h-40 flex justify-center items-start'>
-        <div className='animate-bounce slow'>
+        <div className='animate-bounce'>
           <ChevronsDown className="w-16 h-16 mt-4 animate-pulse" />
-
         </div>
       </div>
     </div>

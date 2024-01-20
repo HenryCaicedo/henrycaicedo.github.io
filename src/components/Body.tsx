@@ -3,12 +3,13 @@ import Section from './Section'
 import Home from './Sections/Home'
 import About from './Sections/About'
 import Skills from './Sections/Skills'
+import Projects from './Sections/Projects'
 
 export default function Body() {
         return (
                 <>
                         <Home />
-                        <div className='space-y-4 my-3 mx-2'>
+                        <div className='space-y-14 my-3 mx-2'>
                                 <Section title='About'>
                                         <About />
                                 </Section>
@@ -16,7 +17,7 @@ export default function Body() {
                                         <Skills/>
                                 </Section>
                                 <Section title='Projects'>
-                                        hola
+                                        <Projects/>
                                 </Section>
                                 <Section title='Contact'>
                                         hola

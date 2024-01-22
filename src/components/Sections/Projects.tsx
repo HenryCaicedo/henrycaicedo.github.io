@@ -4,8 +4,10 @@ import React from 'react'
 
 function ProjectCard() {
     return (
-        <div className='w-96 h-20'>
-            Project
+        <div className='w-96 h-72 border-2 rounded-3xl'>
+            <div className='bg-slate-400'>
+                hello
+            </div>
         </div>
     )
 }
@@ -14,7 +16,7 @@ function ProjectCard() {
 
 export default function Projects() {
     return (
-        <div className="grid grid-cols-3 gap-y-3 gap-x-2">
+        <div className="grid grid-cols-3 gap-6">
             <ProjectCard/>
             <ProjectCard/>
             <ProjectCard/>

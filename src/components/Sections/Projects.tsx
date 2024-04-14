@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
 import { Folder, ArrowUpRight } from 'lucide-react'
 import projectBg from '../../images/project_bg.jpg';
+import projectsList from '../../assets/projects/images/projectsList';
 
+interface ProjectCardProps {
+    name: string;
+    description: string;
+    tags?: string[];
+    img?: string;
+}
 
-
-
-
-
-function ProjectCard() {
-
-    const [isHovered, setHovered] = useState(false);
-
-    const handleMouseEnter = () => {
-        setHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setHovered(false);
-    };
+function ProjectCard({name, description, tags=[], img=projectBg} : ProjectCardProps) {
 
     let tagStyle = 'bg-gray-200 rounded text-black px-2 py-1'
 
@@ -26,28 +19,26 @@ function ProjectCard() {
             <div className='flex justify-between'>
                 <div className='space-y-2'>
                     <Folder className='h-12 w-12' />
-                    <h1 className='text-2xl font-bold uppercase'>Project Title</h1>
+                    <h1 className='text-2xl font-bold uppercase text-left'>
+                        {name}
+                    </h1>
                 </div>
                 <div>
                     <ArrowUpRight className='w-9 h-9' />
                 </div>
             </div>
             <div className='flex-grow text-left'>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur ad adipisicing elit. Ad, aspernatur iste! Dignissi mos at fugiat quos.
+                <p className='font-semibold'>
+                    {description}
                 </p>
             </div>
-            <div className='flex justify-end space-x-4 font-semibold'>
-                <div className={tagStyle}>
-                    Tag 1
+            <div className="flex justify-end space-x-4 font-semibold">
+            {tags.map((tag, index) => (
+                <div key={index} className={tagStyle}>
+                    {tag}
                 </div>
-                <div className={tagStyle}>
-                    Tag 2
-                </div>
-                <div className={tagStyle}>
-                    Tag 3
-                </div>
-            </div>
+            ))}
+        </div>
         </div>
 
     let c2 =
@@ -55,21 +46,22 @@ function ProjectCard() {
             bg-gradient-to-t from-black/25 to-transparent transition-opacity duration-300'>
 
             <h1 className='uppercase text-left font-bold text-3xl'>
-                Bungee Jumping Simulator
+                {name}
             </h1>
         </div>
 
-    let currentComponent = isHovered ? c1 : c2
 
     return (
         <div className='w-80 h-72 border-b-[3px] rounded-lg flex flex-col items-center justify-center border-gray-800
         hover:scale-105 transition ease-in-out duration-300
         select-none cursor-pointer
-        hover:bg-white hover:bg-opacity-5 active:bg-opacity-10 overflow-hidden'
-            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        hover:bg-white hover:bg-opacity-5 active:bg-opacity-10 overflow-hidden'>
             <div className='relative w-full h-full items-center flex'>
+                <div className='absolute w-full h-full text-center justify-center flex z-20 pointer-events-none'>
+                    {c1}
+                </div>
                 <div className='absolute w-full h-full text-center justify-center flex z-10 pointer-events-none'>
-                    {currentComponent}
+                    {/*c2*/}
                 </div>
                 <div className='absolute w-full h-full z-0'>
                     <img src={projectBg}
@@ -84,27 +76,20 @@ function ProjectCard() {
 }
 
 
-function MyComponent() {
-
-    let c1 = <div>Hola</div>
-    let c2 = <div>Adiós</div>
-    return (
-        <div>
-            {c1}
-        </div>
-    )
-}
-
-
 export default function Projects() {
+
     return (
         <div className="grid grid-cols-3 gap-8">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {projectsList.map((project, index) => (
+                <ProjectCard
+                    key={index}
+                    name={project.name}
+                    description={project.description}
+                    tags={project.tags}
+                    img={project.img}
+                />
+            ))}
         </div>
-    )
+    );
 }
+

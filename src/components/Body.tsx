@@ -4,6 +4,7 @@ import Home from './Sections/Home'
 import About from './Sections/About'
 import Skills from './Sections/Skills'
 import Projects from './Sections/Projects'
+import Contact from './Sections/Contact'
 
 export default function Body() {
         return (
@@ -20,7 +21,7 @@ export default function Body() {
                                         <Projects/>
                                 </Section>
                                 <Section title='Contact'>
-                                        hola
+                                        <Contact/>
                                 </Section>
                         </div>
                 </>

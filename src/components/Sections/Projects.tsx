@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { Folder, ArrowUpRight } from 'lucide-react'
-import projectBg from '../../images/project_bg.jpg';
-import projectsList from '../../assets/projects/images/projectsList';
+import projectBg from '../../assets/projects/images/wos.png';
+import projectsList from '../../assets/projects/projectsList';
 
 interface ProjectCardProps {
     name: string;
     description: string;
     tags?: string[];
     img?: string;
+    url: string;
 }
 
-function ProjectCard({name, description, tags=[], img=projectBg} : ProjectCardProps) {
+function ProjectCard({ name, description, tags = [], img = projectBg, url }: ProjectCardProps) {
 
-    let tagStyle = 'bg-gray-200 rounded text-black px-2 py-1'
+    const tagStyle = 'bg-gray-200 rounded text-black px-2 py-1'
 
-    let c1 =
+    const c1 =
         <div className='bg-black bg-opacity-40 flex flex-col p-6 transition-opacity duration-300'>
             <div className='flex justify-between'>
                 <div className='space-y-2'>
@@ -33,15 +34,15 @@ function ProjectCard({name, description, tags=[], img=projectBg} : ProjectCardPr
                 </p>
             </div>
             <div className="flex justify-end space-x-4 font-semibold">
-            {tags.map((tag, index) => (
-                <div key={index} className={tagStyle}>
-                    {tag}
-                </div>
-            ))}
-        </div>
+                {tags.map((tag, index) => (
+                    <div key={index} className={tagStyle}>
+                        {tag}
+                    </div>
+                ))}
+            </div>
         </div>
 
-    let c2 =
+    const c2 =
         <div className='flex items-end h-full w-full justify-start py-8 px-6
             bg-gradient-to-t from-black/25 to-transparent transition-opacity duration-300'>
 
@@ -52,26 +53,29 @@ function ProjectCard({name, description, tags=[], img=projectBg} : ProjectCardPr
 
 
     return (
-        <div className='w-80 h-72 border-b-[3px] rounded-lg flex flex-col items-center justify-center border-gray-800
+        <a href={url} target="_blank">
+            <div className='w-80 h-72 border-b-[3px] rounded-lg flex flex-col items-center justify-center border-gray-800
         hover:scale-105 transition ease-in-out duration-300
         select-none cursor-pointer
         hover:bg-white hover:bg-opacity-5 active:bg-opacity-10 overflow-hidden'>
-            <div className='relative w-full h-full items-center flex'>
-                <div className='absolute w-full h-full text-center justify-center flex z-20 pointer-events-none'>
-                    {c1}
-                </div>
-                <div className='absolute w-full h-full text-center justify-center flex z-10 pointer-events-none'>
-                    {/*c2*/}
-                </div>
-                <div className='absolute w-full h-full z-0'>
-                    <img src={projectBg}
-                        alt="Project Background"
-                        className='h-full w-full hover:scale-125 hover:blur-sm transition ease-in-out duration-300 z-0'
-                    />
-                </div>
-            </div>
+                <div className='relative w-full h-full items-center flex'>
+                    <div className='absolute w-full h-full text-center justify-center flex z-20 pointer-events-none'>
+                        {c2}
+                    </div>
+                    <div className='absolute w-full h-full text-center justify-center flex z-10 pointer-events-none'>
+                        {/*c2*/}
+                    </div>
+                    <div className='absolute w-full h-full z-0'>
+                        <img src={img}
+                            alt="Project Background"
+                            className='h-full w-full hover:scale-125 hover:blur-sm transition ease-in-out duration-300 z-0 object-cover'
 
-        </div>
+                        />
+                    </div>
+                </div>
+
+            </div>
+        </a>
     )
 }
 
@@ -87,6 +91,7 @@ export default function Projects() {
                     description={project.description}
                     tags={project.tags}
                     img={project.img}
+                    url={project.url}
                 />
             ))}
         </div>

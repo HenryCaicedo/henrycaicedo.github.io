@@ -1,4 +1,6 @@
 import React from 'react';
+import { AlertCircle } from 'lucide-react';
+
 
 interface ItemProps {
   word?: string;
@@ -33,8 +35,9 @@ export default function NavBar() {
   return (
     <>
       <div className='flex justify-between items-center bg-[#1f1f1f] px-48 py-3'>
-        <div className='bg-purple-600 w-14 h-14 space-between rounded-lg'>
-
+        <div className='bg-red-900 space-between rounded-lg flex p-3 font-bold'>
+          <AlertCircle className='mr-3'/>
+          Website under development
         </div>
         <ul className='flex space-x-8 items-center'>
           <Item word="Home" />

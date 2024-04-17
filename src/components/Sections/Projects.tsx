@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ name, description, tags = [], img = projectBg, url }: ProjectCardProps) {
 
-    const tagStyle = 'bg-gray-200 rounded text-black px-2 py-1'
+    const tagStyle = 'backdrop-filter backdrop-blur-lg bg-white bg-opacity-50 rounded text-black px-2 py-1'
 
     const c1 =
         <div className='bg-black bg-opacity-40 flex flex-col p-6 transition-opacity duration-300'>
@@ -35,16 +35,16 @@ function ProjectCard({ name, description, tags = [], img = projectBg, url }: Pro
             </div>
             <div className="flex justify-end space-x-4 font-semibold">
                 {tags.map((tag, index) => (
-                    <div key={index} className={tagStyle}>
-                        {tag}
-                    </div>
+                        <div key={index} className={tagStyle}>
+                            {tag}
+                        </div>
                 ))}
             </div>
         </div>
 
     const c2 =
         <div className='flex items-end h-full w-full justify-start py-8 px-6
-            bg-gradient-to-t from-black/25 to-transparent transition-opacity duration-300'>
+            bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300'>
 
             <h1 className='uppercase text-left font-bold text-3xl'>
                 {name}
@@ -83,7 +83,7 @@ function ProjectCard({ name, description, tags = [], img = projectBg, url }: Pro
 export default function Projects() {
 
     return (
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 gap-8 justify-center">
             {projectsList.map((project, index) => (
                 <ProjectCard
                     key={index}

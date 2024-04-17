@@ -40,7 +40,7 @@ export default function Home() {
           <h1 className='text-6xl font-bold mb-2'>
             I'm Henry
           </h1>
-          <h2 className='text-4xl font-semibold'>Web Developer.</h2>
+          <h2 className='text-4xl font-semibold'>software developer.</h2>
         </div>
 
       </div>

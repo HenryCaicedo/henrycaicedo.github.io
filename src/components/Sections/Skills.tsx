@@ -8,7 +8,7 @@ interface PillProps {
 
 function Pill({ title }: PillProps) {
   return (
-    <div className='bg-slate-600 border-slate-700 border-b-4 flex text-3xl
+    <div className='bg-slate-600 border-slate-700 border-b-0 flex text-3xl
                     rounded-2xl items-center px-6 py-2 select-none space-x-4'>
       <Smile className='h-10 w-10' />
       <div>

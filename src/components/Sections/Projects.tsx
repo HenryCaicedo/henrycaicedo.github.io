@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Folder, ArrowUpRight } from 'lucide-react'
 import projectBg from '../../assets/projects/images/wos.png';
 import projectsList from '../../assets/projects/projectsList';
@@ -15,7 +14,7 @@ function ProjectCard({ name, description, tags = [], img = projectBg, url }: Pro
 
     const tagStyle = 'backdrop-filter backdrop-blur-lg bg-white bg-opacity-50 rounded text-black px-2 py-1'
 
-    const c1 =
+    /*const c1 =
         <div className='bg-black bg-opacity-40 flex flex-col p-6 transition-opacity duration-300'>
             <div className='flex justify-between'>
                 <div className='space-y-2'>
@@ -41,7 +40,7 @@ function ProjectCard({ name, description, tags = [], img = projectBg, url }: Pro
                 ))}
             </div>
         </div>
-
+                */
     const c2 =
         <div className='flex items-end h-full w-full justify-start py-8 px-6
             bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300'>

@@ -1,7 +1,6 @@
-import React from 'react';
 import { ChevronsDown } from 'lucide-react';
 
-
+/*
 function ScrollArrow() {
   return (
 
@@ -18,7 +17,7 @@ function ScrollArrow() {
 
   )
 }
-
+*/
 
 
 export default function Home() {

@@ -1,3 +1,4 @@
+import React from 'react'
 import Section from './Section'
 import Home from './Sections/Home'
 import About from './Sections/About'

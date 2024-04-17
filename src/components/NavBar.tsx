@@ -35,7 +35,7 @@ export default function NavBar() {
   return (
     <>
       <div className='flex justify-between items-center bg-[#1f1f1f] px-48 py-3'>
-        <div className='bg-red-900 space-between rounded-lg flex p-3 font-bold'>
+        <div className='bg-yellow-400 space-between rounded-lg flex p-3 font-bold text-black'>
           <AlertCircle className='mr-3'/>
           Website under development
         </div>

@@ -10,7 +10,7 @@ export default function Body() {
         return (
                 <>
                         <Home />
-                        <div className='space-y-52 my-3 mx-2'>
+                        <div className='space-y-48 my-3 mx-2'>
                                 <Section title='About'>
                                         <About />
                                 </Section>

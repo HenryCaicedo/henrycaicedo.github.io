@@ -35,18 +35,18 @@ function ProjectCard({ name, description, tags = [], img = projectBg, url }: Pro
             </div>
             <div className="flex justify-end space-x-4 font-semibold">
                 {tags.map((tag, index) => (
-                        <div key={index} className={tagStyle}>
-                            {tag}
-                        </div>
+                    <div key={index} className={tagStyle}>
+                        {tag}
+                    </div>
                 ))}
             </div>
         </div>
 
     const c2 =
-        <div className='flex items-end h-full w-full justify-start py-8 px-6
+        <div className='flex items-end h-full w-full justify-start py-8 px-8
             bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300'>
 
-            <h1 className='uppercase text-left font-bold text-3xl'>
+            <h1 className='text-left font-bold text-3xl'>
                 {name}
             </h1>
         </div>

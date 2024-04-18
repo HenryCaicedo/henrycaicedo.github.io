@@ -3,7 +3,7 @@ const projectsList = [
         name: 'CodeRacers',
         description: 'Este es un breve resumen del proyecto tres.',
         tags: ['React', 'HTML5', 'UI/UX'],
-        img: 'src/assets/projects/images/cr.png', 
+        img: '../../assets/projects/projects/images/rackity.png', 
         url: 'https://github.com/HenryCaicedo/final-project'
     },
     {

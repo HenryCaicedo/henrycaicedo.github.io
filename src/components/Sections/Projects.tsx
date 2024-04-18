@@ -11,9 +11,12 @@ interface ProjectCardProps {
     url: string;
 }
 
+console.log('projectBg: ',projectBg)
+
 function ProjectCard({ name, description, tags = [], img = projectBg, url }: ProjectCardProps) {
 
     const tagStyle = 'backdrop-filter backdrop-blur-lg bg-white bg-opacity-50 rounded text-black px-2 py-1'
+    console.log('BG: ',img);
 
     const c1 =
         <div className='bg-black bg-opacity-40 flex flex-col p-6 transition-opacity duration-300'>
@@ -85,13 +88,13 @@ export default function Projects() {
     return (
         <div className="grid grid-cols-3 gap-8 justify-center">
             {projectsList.map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    name={project.name}
-                    description={project.description}
-                    tags={project.tags}
-                    img={projectBg}
-                    url={project.url}
+                < ProjectCard
+                    key = { index }
+                    name = { project.name }
+                    description = { project.description }
+                    tags = { project.tags }
+                    img = { project.img }
+                    url = { project.url }
                 />
             ))}
         </div>

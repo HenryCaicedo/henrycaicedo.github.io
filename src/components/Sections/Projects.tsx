@@ -90,7 +90,7 @@ export default function Projects() {
                     name={project.name}
                     description={project.description}
                     tags={project.tags}
-                    img={project.img}
+                    img={projectBg}
                     url={project.url}
                 />
             ))}

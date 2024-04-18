@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import Body from './components/Body';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -14,9 +15,8 @@ function App() {
         <Body/>
       </main>
 
-      <footer className='min-h-80'>
-        {/* Your footer content goes here */}
-        <p>Website designed and implemented by Henry Caicedo</p>
+      <footer className='pt-20'>
+        <Footer/>
       </footer>
     </>
   );

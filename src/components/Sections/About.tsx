@@ -8,12 +8,9 @@ export default function About() {
 
     <div className='items-center justify-center space-x-20 w-full flex flex-grow px-24'>
 
-      <div className='bg-slate-600 w-[22rem] h-[32rem] rounded-2xl text-center overflow-hidden border-b-2 border-slate-700'>
-        <img src={photo} />
-      </div>
 
       <div className='w-1/3'>
-        <p className='text-2xl text-left'>
+        <p className='text-2xl text-left text-slate-300'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Quam reiciendis doloremque aliquam, provident inventore,
           beatae alias numquam animi aperiam sed quos nostrum,
@@ -23,6 +20,9 @@ export default function About() {
         </p>
       </div>
 
+      <div className='bg-slate-600 rotate-3 w-[18rem] h-[26rem] rounded-2xl text-center overflow-hidden border-b-2 border-slate-700'>
+        <img src={photo} />
+      </div>
     </div>
   );
 }

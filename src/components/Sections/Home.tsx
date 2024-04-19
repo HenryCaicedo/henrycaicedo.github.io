@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronsDown } from 'lucide-react';
+import portrait from '../../images/hc-portrait.png';
 
 
 function ScrollArrow() {
@@ -25,11 +26,11 @@ export default function Home() {
   return (
     <div className='h-screen flex flex-col'>
 
-      <div className='items-center justify-center space-x-28 w-full flex flex-grow mt-20'>
+      <div className='items-center justify-center space-x-24 w-full flex flex-grow mt-20'>
 
         <div className='w-1/2 flex justify-end'>
-          <div className='bg-slate-600 w-60 h-60 rounded-full text-center'>
-            PHOTO
+          <div className='bg-slate-600 w-72 h-72 rounded-full text-center overflow-hidden'>
+              <img src={portrait}/>
           </div>
         </div>
 

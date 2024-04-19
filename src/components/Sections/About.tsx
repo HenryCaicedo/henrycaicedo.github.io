@@ -9,14 +9,15 @@ export default function About() {
     <div className='items-center justify-center space-x-20 w-full flex flex-grow px-24'>
 
 
-      <div className='w-1/3'>
-        <p className='text-2xl text-left text-slate-300'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quam reiciendis doloremque aliquam, provident inventore,
-          beatae alias numquam animi aperiam sed quos nostrum,
-          recusandae nisi! Delectus ab quae optio alias debitis.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Dolor obcaecati ut nisi quo tempore possimus assumenda doloribus.
+      <div className='w-5/12 space-y-6'>
+        <p className='text-2xl text-left text-slate-200'>
+          I'm a Systems and Computer Engineer with experience in mobile and web software development,
+          focusing on front-end development. I'm skilled in UI/UX implementation and prototyping tools.
+
+        </p>
+        <p className='text-2xl text-left text-slate-200'>
+          I'm dedicated, organized,creative, and detail-oriented, which contributes to delivering
+          high-quality solutions and ensuring optimal results in the projects I work on.
         </p>
       </div>
 

@@ -16,7 +16,7 @@ export default function About() {
 
         </p>
         <p className='text-2xl text-left text-slate-200'>
-          I'm dedicated, organized,creative, and detail-oriented, which contributes to delivering
+          I'm dedicated, organized, creative, and detail-oriented, which contributes to delivering
           high-quality solutions and ensuring optimal results in the projects I work on.
         </p>
       </div>

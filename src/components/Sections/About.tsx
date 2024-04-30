@@ -8,7 +8,6 @@ export default function About() {
 
     <div className='items-center justify-center space-x-20 w-full flex flex-grow px-24'>
 
-
       <div className='w-5/12 space-y-6'>
         <p className='text-2xl text-left text-slate-200'>
           I'm a Systems and Computer Engineer with experience in mobile and web software development,

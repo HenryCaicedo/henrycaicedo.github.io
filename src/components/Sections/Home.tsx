@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronsDown } from 'lucide-react';
+import { ChevronsDown, FileDown } from 'lucide-react';
 import portrait from '../../images/hc-portrait.png';
 
 
@@ -30,11 +30,11 @@ export default function Home() {
 
         <div className='w-1/2 flex justify-end'>
           <div className='bg-slate-600 w-72 h-72 rounded-full text-center overflow-hidden'>
-              <img src={portrait}/>
+            <img src={portrait} />
           </div>
         </div>
 
-        <div className='w-1/2 flex-col items-start'>
+        <div className='w-1/2 flex-col items-start mt-6'>
           <h1 className='text-6xl font-bold mb-2'>
             Hi,
           </h1>
@@ -42,6 +42,14 @@ export default function Home() {
             I'm Henry
           </h1>
           <h2 className='text-4xl font-semibold'>software developer.</h2>
+          <div>
+          </div>
+          <a target="_blank" href="https://drive.google.com/drive/folders/199injNk5IzHU8cbn6HgRuTOJitmdNrht?usp=sharing" className='flex border w-fit px-2 py-1 rounded-lg mt-3 border-white hover:border-opacity-0
+                                opacity-50 transition duration-200
+                                hover:scale-105 hover:bg-white/20 hover:opacity-100'>
+            <FileDown className='mr-2' />
+            <h1 className='font-bold'>CV</h1>
+          </a>
         </div>
 
       </div>
@@ -54,5 +62,3 @@ export default function Home() {
     </div>
   );
 }
-
-// TODO: Agregar flechitas bajando y destellando

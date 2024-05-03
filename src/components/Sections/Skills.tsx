@@ -9,12 +9,14 @@ interface PillProps {
 
 function Pill({ title, icon: Icon }: PillProps) {
   return (
-    <div className='bg-slate-200 border-b-0 flex text-3xl rounded-2xl items-center px-8 py-4 select-none space-x-4 hover:scale-105 transition duration-300'>
-      {Icon && <Icon width="34px" height="34px"/>} {/* Conditionally render the icon */}
-      <div>
-        <h1 className='text-2xl text-black'>
-          {title}
-        </h1>
+    <div className='bg-slate-100  rounded-2xl items-center  select-none overflow-hidden'>
+      <div className='flex px-8 py-4 space-x-4 transition duration-300 text-3xl'>
+        {Icon && <Icon width="36px" height="36px" />} {/* Conditionally render the icon */}
+        <div>
+          <h1 className='text-2xl text-black'>
+            {title}
+          </h1>
+        </div>
       </div>
     </div>
   );
@@ -26,7 +28,7 @@ export default function Skills() {
       <Pill title="Javascript" icon={JavaScript} />
       <Pill title="CSS" icon={CSS} />
       <Pill title="React" icon={ReactIcon} />
-      <Pill title="NodeJS" icon={Nodejs} />
+      <Pill title="Node.js" icon={Nodejs} />
       <Pill title="Tailwind" icon={TailwindCSS} />
       <Pill title="Flutter" icon={Flutter} />
       <Pill title="Java" icon={Java} />

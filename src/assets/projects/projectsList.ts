@@ -32,14 +32,7 @@ const projectsList = [
         tags: ['Java', 'Game', 'Desktop'],
         img: wos, 
         url: 'https://github.com/leovergaramarq/WomenOfScience',
-    },
-    {
-        name: 'Proyecto 6',
-        description: 'Este es un breve resumen del proyecto seis.',
-        tags: ['HTML', 'CSS', 'Design'],
-        img: 'https://via.placeholder.com/150', 
-        url: 'https://github.com/Jony1754/Onlinegame',
-    },
+    }
 ];
 
 export default projectsList;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Smile } from 'lucide-react';
-import { JavaScript, ReactIcon, CSS, Nodejs, TailwindCSS, Flutter, Java, HTML5, Figma, Photoshop } from '../../assets/icons';
+import { JavaScript, ReactIcon, CSS, Nodejs, TailwindCSS, Flutter, Java, HTML5, Figma, Photoshop, Angular, Nextjs } from '../../assets/icons';
 
 interface PillProps {
   title: string;
@@ -35,6 +35,8 @@ export default function Skills() {
       <Pill title="HTML5" icon={HTML5} />
       <Pill title="Figma" icon={Figma} />
       <Pill title="Photoshop" icon={Photoshop} />
+      <Pill title="Angular" icon={Angular} />
+      <Pill title="Next.js" icon={Nextjs} />
     </div>
   );
 }

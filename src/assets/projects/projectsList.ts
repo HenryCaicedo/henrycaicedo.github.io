@@ -2,6 +2,7 @@ import rackity from './images/rackity.png';
 import cr from './images/cr.png';
 import wos from './images/wos.png';
 import bungee from './images/bungee.png';
+import covidSimulator from  './images/covidSimulator.png';
 
 const projectsList = [
     {
@@ -32,6 +33,13 @@ const projectsList = [
         tags: ['Java', 'Game', 'Desktop'],
         img: wos, 
         url: 'https://github.com/leovergaramarq/WomenOfScience',
+    },
+    {
+        name: 'Covid Simulator',
+        description: 'A simulation game to educate users about the COVID-19 pandemic.',
+        tags: ['Java', 'Simulator', 'Desktop'],
+        img: covidSimulator,
+        url: 'https://github.com/HenryCaicedo/Lab2_COVID_SIMULATOR',
     }
 ];
 

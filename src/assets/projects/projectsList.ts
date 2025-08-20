@@ -28,15 +28,14 @@ const projectsList = [
     },
     {
         name: 'Women of Science',
-       // description: "Educational game about the human \"computers\" during the early days of US space exploration.",
         description : "Educational game featuring Mary Jackson, Katherine Johnson, and Dorothy Vaughan as \"computers\" in early US space exploration.",
         tags: ['Java', 'Game', 'Desktop'],
         img: wos, 
         url: 'https://github.com/leovergaramarq/WomenOfScience',
     },
     {
-        name: 'Covid Simulator',
-        description: 'A simulation game to educate users about the COVID-19 pandemic.',
+        name: 'COVID Simulator',
+        description: 'Graph-based COVID-19 spread simulator analyzing protective measures and contagion patterns.',
         tags: ['Java', 'Simulator', 'Desktop'],
         img: covidSimulator,
         url: 'https://github.com/HenryCaicedo/Lab2_COVID_SIMULATOR',

@@ -3,6 +3,7 @@ import cr from './images/cr.png';
 import wos from './images/wos.png';
 import bungee from './images/bungee.png';
 import covidSimulator from  './images/covidSimulator.png';
+import clientTrack from './images/clientTrack.png';
 
 const projectsList = [
     {
@@ -39,7 +40,15 @@ const projectsList = [
         tags: ['Java', 'Simulator', 'Desktop'],
         img: covidSimulator,
         url: 'https://github.com/HenryCaicedo/Lab2_COVID_SIMULATOR',
-    }
+    },
+    {
+        name: 'Client Track CRM',
+        description: 'Customer relationship management tool for tracking client interactions and data.',
+        tags: ['Next.js', 'Tailwind', 'Web'],
+        img: clientTrack,
+        url: 'https://github.com/HenryCaicedo/client-track-crm',
+    },
+
 ];
 
 export default projectsList;

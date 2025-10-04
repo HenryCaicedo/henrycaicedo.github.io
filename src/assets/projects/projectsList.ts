@@ -47,7 +47,7 @@ const projectsList = [
         description: 'Retro-inspired clone of iOS 6 with skeuomorphic UI, glossy toggles, and shiny app icons.',
         tags: ['React', 'UI/Design', 'Web'],
         img: fruitOS,
-        url: 'https://fruit-os-simulator-6vkkd7lcu-henrycaicedos-projects.vercel.app/',
+        url: 'https://fruit-os-simulator.vercel.app/',
     },
 
     {

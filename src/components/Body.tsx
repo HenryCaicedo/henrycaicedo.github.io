@@ -10,18 +10,18 @@ export default function Body() {
         return (
                 <>
                         <Home />
-                        <div className='space-y-48 my-3 mx-2'>
+                        <div className='space-y-24 md:space-y-36 lg:space-y-48 my-3 mx-4 md:mx-8 '>
                                 <Section title='About'>
                                         <About />
                                 </Section>
                                 <Section title='Skills'>
-                                        <Skills/>
+                                        <Skills />
                                 </Section>
                                 <Section title='Projects'>
-                                        <Projects/>
+                                        <Projects />
                                 </Section>
                                 <Section title='Contact'>
-                                        <Contact/>
+                                        <Contact />
                                 </Section>
                         </div>
                 </>

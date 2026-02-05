@@ -6,5 +6,5 @@
 body {
   background-color: #0c0c0c;
   color: white;
+  overflow-x: hidden;
 }
-

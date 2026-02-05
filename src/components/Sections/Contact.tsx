@@ -35,7 +35,7 @@ function Card({ title, value = 'null', icon: Icon, url, color = 'bg-slate-800' }
 export default function Contact() {
     return (
         <div>
-            <div className='flex space-x-10'>
+            <div className='flex flex-wrap justify-center gap-10'>
                 <Card title='LinkedIn' value='/caicedohenry' icon={Linkedin} color='bg-[#0e76a8]' url='https://www.linkedin.com/in/caicedohenry/' />
                 <Card title='Email' value='heducapi@gmail.com' icon={Mail} color='bg-[#c71610]' url='mailto:heducapi@gmail.com' />
                 <Card title='Github' value='HenryCaicedo' icon={Github} color='bg-[#2dba4e]' url='https://github.com/HenryCaicedo/' />

@@ -11,12 +11,10 @@ interface ProjectCardProps {
     url: string;
 }
 
-console.log('projectBg: ', projectBg)
 
 function ProjectCard({ name, description, tags = [], img = projectBg, url }: ProjectCardProps) {
 
     const tagStyle = 'backdrop-filter backdrop-blur-lg bg-white bg-opacity-50 rounded text-black px-2 py-1'
-    console.log('BG: ', img);
 
     const tags_comp =
         <div className="flex justify-end space-x-4 font-semibold">
@@ -73,7 +71,7 @@ function ProjectCard({ name, description, tags = [], img = projectBg, url }: Pro
 
     return (
         <a href={url} target="_blank">
-            <div className='w-80 h-72 rounded-lg flex flex-col items-center justify-center
+            <div className='w-64 md:w-80 h-72 rounded-lg flex flex-col items-center justify-center
                         hover:scale-105 transition ease-in-out duration-300 group
                         select-none cursor-pointer
                       hover:bg-white hover:bg-opacity-5 active:bg-opacity-10 overflow-hidden'>
@@ -102,9 +100,9 @@ function ProjectCard({ name, description, tags = [], img = projectBg, url }: Pro
 export default function Projects() {
 
     return (
-        <div className="grid grid-cols-3 gap-8 justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 justify-items-center">
             {projectsList.map((project, index) => (
-                < ProjectCard
+                <ProjectCard
                     key={index}
                     name={project.name}
                     description={project.description}

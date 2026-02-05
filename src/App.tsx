@@ -7,17 +7,17 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <nav className="fixed top-0 w-full bg-white shadow-md z-50">
+      <nav className="fixed top-0 w-full bg-[#1f1f1f] shadow-md z-50">
         <NavBar />
       </nav>
 
       <main>
-        <Body/>
+        <Body />
       </main>
 
-      <footer className='pt-20'>
-        <Footer/>
-      </footer>
+      <div className='pt-20'>
+        <Footer />
+      </div>
     </>
   );
 }
